@@ -1,7 +1,7 @@
 # Project: Global Animal Sightings
 
 App for searching animal sightings in various countries. Created by: Brennan Larson. Email: BrennanLarson@protonmail.com.
-The app can be accessed [here](https://zzz-polished-a3181562-86b4-4a27-9e71-5a8e483b1b19-amai4lhqja-ue.a.run.app).
+The app can be accessed [here](https://zzz-polished-a3181562-86b4-4a27-9e71-5a8e483b1b19-amai4lhqja-ue.a.run.app). This app was heavily inspired by [this](https://connect.appsilon.com/arctic-fauna/) Appsilon app.
 ## Project Description
 
 App utilizes all animal sightings from all countries listed by the Global Biodiversity Information Facility. When someone searches for an animal in the app, a map display where the animal was seen and shows a timeline of how many times the animal was seen on various days.
@@ -30,10 +30,10 @@ The app requires users to input an animal they want to search for in the search 
 ### Technical requirements
 1: No scaffolding tools like Golem, packer, were used for development.\
 2: shinyModules have been used on the UI page of the app. The server page for the app could likely use some modules as well for a future update to the app.\
-3: Unit test was performed via the shinytest2 package. Tests can be found in the "tests" folder.
-
+3: Unit tests were performed via the shinytest2 package. Tests can be found in the "tests" folder.
+4: App is hosted on Polished Tech, not shinyapps.io.
 ### Add-on Features/Extras
-1: Beautiful UI skill: CSS is used extensively throughout the app to give the header, footer, buttons, graph timeline, and map a more pleasant and unique look. \
+1: Beautiful UI skill: CSS is used extensively throughout the app to give the header, footer, buttons, graph timeline, and map a more pleasant and unique look. App got lots of inspiration from this Appsilon app: [here](https://connect.appsilon.com/arctic-fauna/) \
 \
 2: Performance optimization skill: The initial huge dataset csv file of 20GB was broken down into individual country csv files using Python, and then stored on AWS S3. Then these countries csv files are called in the app to create the dataframes. This results in super quick speeds and allows for all countries to be included in the analysis.\
 \
