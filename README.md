@@ -1,7 +1,7 @@
 # Project: Global Animal Sightings
 
-App for searching animal sightings in various countries. Created by: Brennan Larson. Email: BrennanLarson@protonmail.com
-
+App for searching animal sightings in various countries. Created by: Brennan Larson. Email: BrennanLarson@protonmail.com.
+The app can be accessed [here](https://zzz-polished-a3181562-86b4-4a27-9e71-5a8e483b1b19-amai4lhqja-ue.a.run.app).
 ## Project Description
 
 App utilizes all animal sightings from all countries listed by the Global Biodiversity Information Facility. When someone searches for an animal in the app, a map display where the animal was seen and shows a timeline of how many times the animal was seen on various days.
@@ -17,14 +17,14 @@ The app requires users to input an animal they want to search for in the search 
 2: App display a visualization timeline of when a given animal was seen.\
 3: App display a default screen instructing a user to type in an animal in the search bar.\
 4: There are some additional features added in to make the app more user friendly. These are \
-&nbsp;1: Allowing users to search by a general vernacular name, eg bear. \
-&nbsp;2: Non case specific text required for matching user search with vernacular or scientific name.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: Allowing users to search by a general vernacular name, eg bear. \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: Non case specific text required for matching user search with vernacular or scientific name.
     I lower all text. \
-&nbsp;3: If there are multiple animals found that match what the user is looking for, \
-&nbsp;    all of them are displayed on the map and timeline. This is good because if \
-&nbsp;    a user is looking for a vauge animal like a bear, then multiple bears found in that \
-&nbsp;    country will be first displayed, then the user can narrow their bear search down \
-&nbsp;    from there.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3: If there are multiple animals found that match what the user is looking for, \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    all of them are displayed on the map and timeline. This is good because if \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    a user is looking for a vauge animal like a bear, then multiple bears found in that \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    country will be first displayed, then the user can narrow their bear search down \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    from there.
 
 
 ### Technical requirements
