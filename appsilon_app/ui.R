@@ -8,6 +8,7 @@ library(shiny)
 library(shinydashboard)
 library(shinydashboardPlus)
 # App was created by Brennan Larson. Email: BrennanLarson@protonmail.com
+# App can be accessed here: https://zzz-polished-a3181562-86b4-4a27-9e71-5a8e483b1b19-amai4lhqja-ue.a.run.app
 
 # Call AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_DEFAULT_REGION
 # using the Sys.getenv command.
@@ -23,7 +24,7 @@ country_continent_infrastructure <<- s3read_using(FUN = data.table::fread,
   object = sprintf("s3://appsilon.coding.challenge/app_country_continent_structure.csv"))
 
 
-# Create a search button that is displayed on our app.
+# Create a search button module that is displayed on our app.
 searchButtonUI <- function(id, label = "Search Button") {
   ns <- NS(id)
   tagList(
@@ -34,7 +35,7 @@ searchButtonUI <- function(id, label = "Search Button") {
   )
 }
 
-# Create a continent selector dropdown menu.
+# Create a continent selector dropdown menu module.
 continentSelectorUI <- function(id, label = "Continent Selector") {
   ns <- NS(id)
   tagList(
@@ -44,7 +45,7 @@ continentSelectorUI <- function(id, label = "Continent Selector") {
   )
 }
 
-# Create a country selector dropdown menu.
+# Create a country selector dropdown menu module.
 countrySelectorUI <- function(id, label = "Country Selector") {
   ns <- NS(id)
   tagList(
@@ -82,10 +83,10 @@ appHeaderUI <- function(id, label = "App Header") {
              fluidRow(
                column(width = 12,
                       shinydashboardPlus::box(align = "center",
-                                              img(src="https://connect.appsilon.com/arctic-fauna/_w_be84186a/static/images/appsilon-logo.png",
-                                                  width=100),
-                                              HTML('<span style="font-family:Roboto">
-              <font size="4"><b>Global Animal Sightings</b></font></span>')
+                        img(src="https://connect.appsilon.com/arctic-fauna/_w_be84186a/static/images/appsilon-logo.png",
+                            width=100),
+                        HTML('<span style="font-family:Roboto">
+                          <font size="4"><b>Global Animal Sightings</b></font></span>')
           ),
         )
       ),
@@ -149,3 +150,4 @@ shinyUI(fluidPage(
   # Display the app's footer.
   appFooterUI("appFooter", "App Footer")
 ))
+
