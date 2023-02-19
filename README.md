@@ -35,7 +35,7 @@ The app requires users to input an animal they want to search for in the search 
 ### Add-on Features/Extras
 1: Beautiful UI skill: CSS is used extensively throughout the app to give the header, footer, buttons, graph timeline, and map a more pleasant and unique look. \
 \
-2: Performance optimization skill: The initial huge dataset csv file of 20GB was broken down into individual country csv files, and then stored on AWS S3. Then these countries csv files are called in the app to create the dataframes. This results in super quick speeds and allows for all countries to be included in the analysis.\
+2: Performance optimization skill: The initial huge dataset csv file of 20GB was broken down into individual country csv files using Python, and then stored on AWS S3. Then these countries csv files are called in the app to create the dataframes. This results in super quick speeds and allows for all countries to be included in the analysis.\
 \
 3: JavaScript skill: When an animal name is click on the map, then the animal's scientific name will be displayed.\
 \
