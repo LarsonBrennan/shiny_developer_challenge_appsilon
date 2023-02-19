@@ -35,6 +35,9 @@ shinyServer(function(input, output, session) {
   load_data <- function() {
     example_data<-get_data_aws()
     req(input$searchText)
+    
+    # Lower input search text and vernacular or scientific name text,
+    # then subset the dataframe based on the matching text.
     example_data = example_data[tolower(vernacularName) %like% tolower(input$searchText) |
                                   tolower(scientificName) %like% tolower(input$searchText)]
   }
@@ -116,6 +119,7 @@ shinyServer(function(input, output, session) {
           ggplotly(ggplot_timeline)  %>% config(displayModeBar = F)
 
         },
+                               
         # If error occured call the default_observation_graph
         error = function(e){
           default_observation_graph()
