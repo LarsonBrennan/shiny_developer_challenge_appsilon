@@ -20,7 +20,7 @@ bucketlist(key = Sys.getenv("AWS_ACCESS_KEY_ID"),
 # Load a dataframe called country_continent_infrastructure from AWS S3.
 # The dataframe is used as a schema of sorts linking the file structure
 # in the AWS S3 bucket, so we can call the country files from AWS S3 easily.
-country_continent_infrastructure <<- s3read_using(FUN = data.table::fread,
+country_continent_infrastructure <- s3read_using(FUN = data.table::fread,
   object = sprintf("s3://appsilon.coding.challenge/app_country_continent_structure.csv"))
 
 
