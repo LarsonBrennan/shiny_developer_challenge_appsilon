@@ -14,9 +14,10 @@ The app requires users to input an animal they want to search for in the search 
 
 ### Business requirements
 1: App allows for search of animals by vernacular and scientific name.\
-2: App display a visualization timeline of when a given animal was seen.\
+2: App displays a visualization timeline of when a given animal was seen using ggPlot.\
+3: App displays a map of all animal sightings for a given animal using leaflet. \
 3: App display a default screen instructing a user to type in an animal in the search bar.\
-4: There are some additional features added in to make the app more user friendly. These are \
+5: There are some additional features added in to make the app more user friendly. These are \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: Allowing users to search by a general vernacular name, eg bear. \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: Non case specific text required for matching user search with vernacular or scientific name.
     I lower all text. \
